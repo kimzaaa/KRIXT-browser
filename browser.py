@@ -57,7 +57,7 @@ class Window(QMainWindow):
 
         self.web = QWebEngineView()
         self.setCentralWidget(self.web)
-        iurl = 'http://127.0.0.1:5500/krixt-main-website-search-engine/html%20stuff.html'
+        iurl = 'http://www.krixt.tk/'
         self.ale.setText(iurl)
         self.web.load(QUrl(iurl))
 
@@ -184,7 +184,7 @@ class MainWindow(QMainWindow):
         navtb.addAction(stop_btn)
  
         # creating first tab
-        self.add_new_tab(QUrl('http://127.0.0.1:5500/krixt-main-website-search-engine/html%20stuff.html'), 'Homepage')
+        self.add_new_tab(QUrl('http://www.krixt.tk/'), 'Homepage')
  
         # showing all the components
         self.show()
@@ -200,7 +200,7 @@ class MainWindow(QMainWindow):
         # if url is blank
         if qurl is None:
             # creating a google url
-            qurl = QUrl('http://127.0.0.1:5500/krixt-main-website-search-engine/html%20stuff.html')
+            qurl = QUrl('http://www.krixt.tk/')
  
         # creating a QWebEngineView object
         browser = QWebEngineView()
@@ -272,7 +272,7 @@ class MainWindow(QMainWindow):
     def navigate_home(self):
  
         # go to google
-        self.tabs.currentWidget().setUrl(QUrl("http://127.0.0.1:5500/krixt-main-website-search-engine/html%20stuff.html"))
+        self.tabs.currentWidget().setUrl(QUrl("http://www.krixt.tk/"))
  
     # method for navigate to url
     def navigate_to_url(self):
